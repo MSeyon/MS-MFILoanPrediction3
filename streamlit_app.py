@@ -3,11 +3,11 @@ import xgboost as xgb
 import pickle
 
 # Load the trained model
-with open('xgboost_loan_default_model.pkl', 'rb') as file:
+with open('xgboost_MFIloan_default_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Label Encoders for categorical features
-with open('label_encoders.pkl', 'rb') as file:
+with open('MFIlabel_encoders.pkl', 'rb') as file:
     label_encoders = pickle.load(file)
 
 def get_user_input():
